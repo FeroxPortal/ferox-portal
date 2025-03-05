@@ -1,0 +1,32 @@
+:root{
+    --black: #0c0c0c;
+    --grey: #3c3c3c;
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    background:linear-gradient(90deg, var(--black), var(--grey));
+    font-family: 'Roboto', sans-serif;
+    animation: gradientAnimation 10s ease infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+img{
+    max-width: 95%;
+    height: auto;   
+}
+
+@keyframe gradientAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
