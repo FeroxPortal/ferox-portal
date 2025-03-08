@@ -9,7 +9,7 @@
         showLogo = true
         setTimeout(() => {
             showFooter = true
-        }, 3000)
+        }, 2000)
     })
 
 </script>
@@ -77,9 +77,14 @@
         transform: scale(1.2);  
         transition-duration: 0.4s;
     }
+    footer a:hover svg{
+        fill: var(--main);
+        transition-duration: 0.4s;
+    }
     footer a svg{
         fill: var(--white);
         width: 30px;
         height: 30px;
+        transition-duration: 0.4s;
     }
 </style>
